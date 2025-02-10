@@ -5,60 +5,65 @@
       body {
         text-align: center;
       }
-      div {
-        display: flex;
-      }
-      section {
-        display: block;
-      }
-
       img {
-        padding: 10px;
+        padding: 15px;
         object-fit: cover;
         border-radius: 5px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        height: 180px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0);
+        height: 400px;
         width: auto;
+        margin: 20px;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      li {
+        display: flex;
+        flex-direction: column;
+      }
+      span {
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 60px;
+        background-color: lavender;
+        color: black;
       }
     </style>
   </head>
-  <body background="./mainbg.png">
+  <body background="./assert/mainbg.png">
     <h1>My Clicks</h1>
     <section>
-      <div>
-        <figure>
-          <a href="./sky.html" target="_blank">
-            <img src="./sky/im5.jpg" />
-          </a>
-          <figcaption>skies</figcaption>
-        </figure>
-        <figure>
-          <a href="./flowers.html" target="_blank">
-            <img src="./flowers/im9.jpg" />
-          </a>
-          <figcaption>flowers</figcaption>
-        </figure>
-        <figure>
-          <a href="./drawings.html" target="_blank">
-            <img src="./drawings/im3.jpg" />
-          </a>
-          <figcaption>drawings</figcaption>
-        </figure>
-      </div>
-      <div>
-        <figure>
-          <a href="./julie.html" target="_blank">
-            <img src="./julie/im8.jpg" />
-          </a>
-          <figcaption>Julie</figcaption>
-        </figure>
-        <figure>
-          <a href="./random.html" target="_blank">
-            <img src="./random/im9.jpg" />
-          </a>
-          <figcaption>Random</figcaption>
-        </figure>
-      </div>
+      <ul type="none">
+        <li>
+          <a href="./pages/sky.html"><img src="./assert/sky/im5.jpg" /></a>
+          <span>Skies</span>
+        </li>
+        <li>
+          <a href="./pages/flowers.html"
+            ><img src="./assert/flowers/im9.jpg"
+          /></a>
+          <span>Flowers</span>
+        </li>
+        <li>
+          <a href="./pages/julie.html"><img src="./assert/julie/im8.jpg" /></a>
+          <span>Julie</span>
+        </li>
+        <li>
+          <a href="./pages/drawings.html"
+            ><img src="./assert/drawings/im3.jpg"
+          /></a>
+          <span>Drawings</span>
+        </li>
+        <li>
+          <a href="./pages/random.html"
+            ><img src="./assert/random/im9.jpg"
+          /></a>
+          <span>Random</span>
+        </li>
+      </ul>
     </section>
   </body>
 </html>
